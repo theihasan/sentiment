@@ -12,10 +12,12 @@
                         Analyze
                     </button>
                 </form>
+                @if($result)
                 <h2 class="mt-4 mb-4 text-xl font-bold text-left">Result:</h2>
                 <div id="result" class="p-4 mt-4 border border-gray-300 rounded-md bg-gray-50">
                     {!! $result !!}
                 </div>
+                @endif
             </div>
         </div>
     </div>
