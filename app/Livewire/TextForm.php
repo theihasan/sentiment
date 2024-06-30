@@ -29,6 +29,12 @@ class TextForm extends Component
         $this->result = 'Sentiment calculation in progress. Please wait...';
     }
 
+    #[On('echo:sentiment-analyzed,SentimentAnalyzed')]
+    public function dump($sentiment): void
+    {
+        $this->result = 'Sentiment score: ' . $sentiment['sentiment']['sentiment_score'] .
+            '  Emoji: ' . json_encode(json_decode($sentiment['sentiment']['emoji']), JSON_UNESCAPED_UNICODE);
+    }
 
 
 }
