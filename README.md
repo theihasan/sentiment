@@ -18,8 +18,8 @@ Node.js and npm
 Laravel 10.x or higher
 Installation
 Clone the Repository
-
-git clone https://github.com/yourusername/emoji-sentiment-analyzer.git
+<br>
+git clone [https://github.com/yourusername/emoji-sentiment-analyzer.git](https://github.com/theihasan/sentiment.git)
 cd emoji-sentiment-analyzer
 Install PHP Dependencies
 
